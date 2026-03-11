@@ -15,7 +15,7 @@ seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou
 
 ## Relatório de Auditoria
 
-Consulte aqui a última atualização: [Relatório do {{ page.website }}](report.html)
+Consulte aqui a última atualização: [Relatório do {{ page.website }}](report_025.html)
 
 <details>
   <summary>Histórico de atualizações</summary>
