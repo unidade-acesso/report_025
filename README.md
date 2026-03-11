@@ -23,3 +23,7 @@ Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia -
     <li><a href="ddmmaaaa_report.html">(dd/mm/aaaa). Relatório do {{ page.website }}</a></li>
   </ul>
 </details>
+
+## Lista de websites incluídas na análise:
+- https://www.essa.pt/
+- https://tmsr.scml.pt/
