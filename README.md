@@ -24,6 +24,6 @@ Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia -
   </ul>
 </details>
 
-## Lista de websites incluídas na análise:
+## Lista de websites incluídas na análise
 - https://www.essa.pt/
 - https://tmsr.scml.pt/
