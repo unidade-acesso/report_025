@@ -6,12 +6,12 @@ owner: "Santa Casa da Misericórdia"         # Entre as aspas escrever o nome do
 seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou Ouro
 ---
 
-# {{ page.website }}
+# Santa Casa da Misericórdia - Pack 2
 
-- Data de criação: {{ page.date }}
-- URL: {{ page.uri }}
-- Propriedade: {{ page.owner }}
-- Candidatura: {{ page.seal }}
+- Data de criação: 11/03/2026
+- URL: https://www.essa.pt/, https://tmsr.scml.pt/
+- Propriedade: Santa Casa da Misericórdia
+- Candidatura: Prata
 
 ## Relatório de Auditoria
 
