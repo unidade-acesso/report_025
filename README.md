@@ -26,4 +26,4 @@ Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia -
 
 ## Declarações de Acessibilidade analisadas
 - https://www.essa.pt/acessibilidade/
-- https://www.essa.pt/acessibilidade/
+- https://tmsr.scml.pt/declaracao-de-acessibilidade/
