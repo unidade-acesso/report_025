@@ -15,7 +15,7 @@ seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou
 
 ## Relatório de Auditoria
 
-Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia - Pack 2](report_025.html)
+Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia - Pack 2](relatorio_report_025.html)
 
 <details>
   <summary>Histórico de atualizações</summary>
