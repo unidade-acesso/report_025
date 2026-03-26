@@ -86,7 +86,7 @@
       <ul>
         <li>Avaliação feita por: ARTE. I.P. - Núcleo de Experiência e Usabilidade</li>
         <li>Data de criação: 11/03/2026</li>
-        <li>Última atualização: 25/03/2026</li>
+        <li>Última atualização: 26/03/2026</li>
         <li>URL: <a href="https://www.essa.pt/, https://tmsr.scml.pt/" target="_blank" rel="noopener noreferrer">https://www.essa.pt/, https://tmsr.scml.pt/</a></li>
         <li>Propriedade: Santa Casa da Misericórdia</li>
         <li>Candidatura: Prata</li>
@@ -107,7 +107,7 @@
               
               <li><a href="#checklist-10-aspetos">Checklist 10 aspetos</a>
                 <ul class="indent-list">
-                  <li><a href="#req-chk10-r-1.2">Requisito 1.2 - É possível selecionar as opções e as subopções do menu quer com rato quer com teclado</a></li>
+                  <li><a href="#req-chk10-r-1.1">Requisito 1.1 - O menu de navegação deve estar estruturado como uma lista de opções</a></li><li><a href="#req-chk10-r-1.2">Requisito 1.2 - É possível selecionar as opções e as subopções do menu quer com rato quer com teclado</a></li><li><a href="#req-chk10-r-1.3">Requisito 1.3 - As imagens-link, caso existam no menu, devem ter o correspondente equivalente alternativo em texto</a></li><li><a href="#req-chk10-r-2.1">Requisito 2.1 - Existe um título h1 marcado na página</a></li>
                 </ul>
               </li>
               
@@ -138,7 +138,7 @@
         <caption>Níveis de conformidade das avaliações manuais</caption>
         <thead><tr><th>Checklist</th><th>Conformidade alcançada</th><th>Resultado</th></tr></thead>
         <tbody>
-          <tr><td>10 aspetos</td><td>96.3% (26/27)</td><td><span class="status-ok"><span class="sr-only">etiqueta: </span>Passa</span></td></tr>
+          <tr><td>10 aspetos</td><td>85.2% (23/27)</td><td><span class="status-ok"><span class="sr-only">etiqueta: </span>Passa</span></td></tr>
           <tr><td>Conteúdo</td><td>100.0% (17/17)</td><td><span class="status-ok"><span class="sr-only">etiqueta: </span>Passa</span></td></tr>
           <tr><td>Transação</td><td>100.0% (13/13)</td><td><span class="status-ok"><span class="sr-only">etiqueta: </span>Passa</span></td></tr>
         </tbody>
@@ -161,17 +161,63 @@
         
       <p><strong>Nível de conformidade:</strong></p>
         <ul>
-          <li><strong>Checklist 10 aspetos</strong>: 96.3% (26/27)
+          <li><strong>Checklist 10 aspetos</strong>: 85.2% (23/27)
             <ul>
               <li>Requisitos avaliados: 27 (27 aplicáveis)</li>
-              <li>Requisitos OK: 26</li>
-              <li>Requisitos NOK: 1</li>
+              <li>Requisitos OK: 23</li>
+              <li>Requisitos NOK: 4</li>
               
             </ul>
           </li>
         </ul>
     
-        <h4 class="requirement-title" id="req-chk10-r-1.2">Requisito 1.2 - É possível selecionar as opções e as subopções do menu quer com rato quer com teclado</h4>
+        <h4 class="requirement-title" id="req-chk10-r-1.1">Requisito 1.1 - O menu de navegação deve estar estruturado como uma lista de opções</h4>
+<div class="requirement-content">
+<p><span class="status-nok"><span class="sr-only">etiqueta: </span>NOK</span></p>
+<p>Lista de evidências recolhidas:</p>
+<ul class="evidence-list">
+
+              <li class="evidence-item">
+                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/unidade-acesso/report_025/issues/1" class="issue-link" target="_blank" rel="noopener noreferrer">issue #1</a> <strong>O menu de navegação deve estar estruturado como uma lista de opções</strong></p>
+                <div class="evidence-labels"><span class="label-tag label-checklist"><span class="sr-only">etiqueta: </span>chk 10 web</span><span class="label-tag label-requisito"><span class="sr-only">etiqueta: </span>R 1.1</span><span class="label-tag label-nok"><span class="sr-only">etiqueta: </span>NOK</span></div>
+                <div class="issue-content"><blockquote>
+<p>O menu de navegação deve estar estruturado como uma lista de opções. </p>
+<ul>
+<li><a href="https://amagovpt.github.io/kit-selo/checklists/checklist-10aspetos#n11">Ver requisito 1.1 da lista 10 aspetos</a></li>
+</ul>
+</blockquote>
+<h3>Escola Superior de Saúde do Alcoitão - OK</h3>
+<p><strong>Evidências</strong><br>Os elementos do menu de navegação estão estruturados como lista, recorrendo aos elementos <code>&lt;ul&gt; e &lt;li&gt;</code> e o leitor de ecrã anuncia que existem 9 opções. </p>
+<img src="https://github.com/user-attachments/assets/8141c6c4-5f06-4b1a-9a28-64c2a2d6c560" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p><em>Figura 1 - Leitor de ecrã anuncia que existem 9 opções no menu de navegação corretamente, devido à estrutura de lista no HTML.</em> </p>
+<h3>Temporada Música em São Roque - NOK</h3>
+<p><strong>Evidências</strong><br>Os elementos do menu de navegação estão corretamente estruturados como uma lista, utilizando as tags <code>&lt;ul&gt; e &lt;li&gt;</code>. </p>
+<p>No entanto, verificou-se que o NVDA anuncia o conteúdo gerado via CSS, a propriedade <code>content: "Menu"</code> do pseudo-elemento <code>::before</code>, como se fosse mais um item da lista. </p>
+<img src="https://github.com/user-attachments/assets/447b255a-4029-4e4c-aa07-78c252e403ba" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p><em>Figura 2 - Pseudo-elemento ::before tem a propriedade content: Menu no CSS.</em> </p>
+<p>Como resultado, em vez de quatro opções reais, o leitor de ecrã anuncia cinco. Este comportamento, embora inconsistente entre browsers, representa um problema de acessibilidade, uma vez que informação sem valor semântico é exposta ao utilizador.</p>
+<img src="https://github.com/user-attachments/assets/c3b02ec0-0d0d-4e2a-8d44-7481ed44cdfc" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p><em>Figura 3 - Leitor de ecrã NVDA anuncia que existem 5 opções em desktop.</em></p>
+<p>O elemento menu também está a ser lido pelo Talkback, mas nessa interação já não contabiliza como opção de lista, o que significa que existe um comportamento inconsistente entre os diferentes leitores de ecrãs e browsers. </p>
+<p><strong>Recomendação</strong> </p>
+<h3>Avaliação geral</h3>
+<ul>
+<li><a href="https://www.essa.pt/">Escola Superior de Saúde do Alcoitão</a> - <strong>OK</strong></li>
+<li><a href="https://tmsr.scml.pt/">Temporada Música em São Roque</a> - <strong>NOK</strong></li>
+</ul>
+</div>
+              </li></ul>
+</div>
+<h4 class="requirement-title" id="req-chk10-r-1.2">Requisito 1.2 - É possível selecionar as opções e as subopções do menu quer com rato quer com teclado</h4>
 <div class="requirement-content">
 <p><span class="status-nok"><span class="sr-only">etiqueta: </span>NOK</span></p>
 <p>Lista de evidências recolhidas:</p>
@@ -187,7 +233,7 @@
 </ul>
 </blockquote>
 <h3><strong>Escola Superior de Saúde do Alcoitão - NOK</strong></h3>
-<p><strong>Evidências</strong><br>O leitor de ecrã</p>
+<p><strong>Evidências</strong><br>Quando se navega com o teclado ou com leitor de ecrã na versão mobile do site, o leitor de ecrã anuncia o botão do <strong>menu hambúrguer como estando fechado</strong>. No entanto, quando se avança para o elemento seguinte, são lidas as subopções do menu, mesmo sem este ter sido aberto.</p>
 <img src="https://github.com/user-attachments/assets/724df35f-fb6b-436c-8dd0-8c010af946ca" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
 
 
@@ -231,6 +277,88 @@
 <ul>
 <li><a href="https://www.essa.pt/">Escola Superior de Saúde do Alcoitão</a> - <strong>NOK</strong></li>
 <li><a href="https://tmsr.scml.pt/">Temporada Música em São Roque</a> - <strong>OK</strong></li>
+</ul>
+</div>
+              </li></ul>
+</div>
+<h4 class="requirement-title" id="req-chk10-r-1.3">Requisito 1.3 - As imagens-link, caso existam no menu, devem ter o correspondente equivalente alternativo em texto</h4>
+<div class="requirement-content">
+<p><span class="status-nok"><span class="sr-only">etiqueta: </span>NOK</span></p>
+<p>Lista de evidências recolhidas:</p>
+<ul class="evidence-list">
+
+              <li class="evidence-item">
+                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/unidade-acesso/report_025/issues/3" class="issue-link" target="_blank" rel="noopener noreferrer">issue #3</a> <strong>Existem imagens-link no menu com um equivalente alternativo em texto que não é compreensível</strong></p>
+                <div class="evidence-labels"><span class="label-tag label-requisito"><span class="sr-only">etiqueta: </span>R 1.3</span><span class="label-tag label-checklist"><span class="sr-only">etiqueta: </span>chk 10 web</span><span class="label-tag label-nok"><span class="sr-only">etiqueta: </span>NOK</span></div>
+                <div class="issue-content"><blockquote>
+<p>As imagem-link, caso existam no menu, devem ter o correspondente equivalente alternativo em texto.</p>
+<ul>
+<li><a href="https://amagovpt.github.io/kit-selo/checklists/checklist-10aspetos#n13">Ver requisito 1.3 da lista 10 aspetos</a></li>
+</ul>
+</blockquote>
+<h3><strong>Escola Superior de Saúde do Alcoitão - NOK</strong></h3>
+<p><strong>Evidências</strong><br>Quando abrimos o botão de Pesquisa com o leitor de ecrã, a barra de pesquisa é expandida e aparece um botão de Fechar ao lado da barra. O leitor de ecrã lê esse link como "Close Search" devido ao <code>aria-label</code> que está atribuído ao link da Pesquisa, mas está em inglês, podendo não ser perceptível para utilizadores cegos que apenas compreendem português. </p>
+<img src="https://github.com/user-attachments/assets/9595e339-07b8-4d1a-92e0-7a9770e02c9b" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p>_Figura 1 - Lleitor de ecrã lê o o botão de fechar o campo de pesquisa como "Close Search" de acordo com o atributo <code>aria-label</code>- </p>
+<p><strong>Recomendação</strong><br>Devem alterar o <code>atributo</code> aria-label do link da Pesquisa de <code>aria-label="Close Search"</code> para <code>aria-label="Fechar campo de pesquisa"</code> na versão portuguesa do site. </p>
+<h3><strong>Temporada Música em São Roque - NOK</strong></h3>
+<p><strong>Evidências</strong><br>Quando navegamos pelas opções do menu, o leitor de ecrã lê os atributos <code>aria-label</code> associado aos botões, não sendo perceptíveis para quem não compreende inglês, chavões técnicos. Além disso, os botões de abrir são iguais aos botões de fechar. </p>
+<p>Os botões são: </p>
+<ul>
+<li>Alternar tema claro/escuro</li>
+<li>Toggle Search (botão de abrir e fechar a pesquisa)</li>
+<li>Toggle Menu (botão de abrir e fechar a pesquisa)</li>
+</ul>
+<img src="https://github.com/user-attachments/assets/084e1e9a-d3f0-4ff4-ba9c-1026b7fb14cc" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p><em>Figura 2 - Leitor de ecrã lê os botões do menu do tema, pesquisa e search de acordo com os atributos <code>aria-label.</code></em> </p>
+<img src="https://github.com/user-attachments/assets/4b1d4e98-0c96-4eeb-b3a0-90b023024872" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p>Figura 3 - O botão de "Fechar pesquisa" tem um <code>aria-label</code> igual ao botão que abre a pesquisa. </p>
+<p><strong>Recomendações</strong><br>Alterar os atributos <code>aria-label</code> associados aos botões: </p>
+<ul>
+<li>"Alternar tema claro/escuro" deve passar a ser <code>aria-label="Mudar para tema escuro"</code> no botão da lua, e<code> aria-label="Mudar para tema claro"</code> no botão do sol, para comunicar ao utilizador de leitor ecrã para qual tema irá mudar quando ativar o botão.</li>
+<li>"Toggle Search" deve passar a ser <code>aria-label="Pesquisar"</code>. O botão de fechar deve ser "Fechar pesquisa". </li>
+<li>"Toggle Menu" deve passar a ser "aria-label="Menu". O botão de fechar deve ser "Fechar menu".</li>
+</ul>
+<h3>Avaliação geral</h3>
+<ul>
+<li><a href="https://www.essa.pt/">Escola Superior de Saúde do Alcoitão</a> - <strong>NOK</strong></li>
+<li><a href="https://tmsr.scml.pt/">Temporada Música em São Roque</a> - <strong>NOK</strong></li>
+</ul>
+</div>
+              </li></ul>
+</div>
+<h4 class="requirement-title" id="req-chk10-r-2.1">Requisito 2.1 - Existe um título h1 marcado na página</h4>
+<div class="requirement-content">
+<p><span class="status-nok"><span class="sr-only">etiqueta: </span>NOK</span></p>
+<p>Lista de evidências recolhidas:</p>
+<ul class="evidence-list">
+
+              <li class="evidence-item">
+                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/unidade-acesso/report_025/issues/4" class="issue-link" target="_blank" rel="noopener noreferrer">issue #4</a> <strong>O título &lt;h1&gt; não atribuído ao conteúdo correto</strong></p>
+                <div class="evidence-labels"><span class="label-tag label-requisito"><span class="sr-only">etiqueta: </span>R 2.1</span><span class="label-tag label-checklist"><span class="sr-only">etiqueta: </span>chk 10 web</span><span class="label-tag label-nok"><span class="sr-only">etiqueta: </span>NOK</span></div>
+                <div class="issue-content"><blockquote>
+<p>Existe um título <code>&lt;h1&gt;</code> marcado na página.</p>
+<ul>
+<li><a href="https://amagovpt.github.io/kit-selo/checklists/checklist-10aspetos#n21">Ver requisito 2.1 da lista 10 aspetos</a></li>
+</ul>
+</blockquote>
+<h3><strong>Escola Superior de Saúde do Alcoitão - NOK</strong></h3>
+<p><strong>Evidências</strong><br><strong>Recomendações</strong></p>
+<h3><strong>Temporada Música em São Roque - NOK</strong></h3>
+<p><strong>Evidências</strong><br><strong>Recomendações</strong></p>
+<h3>Avaliação geral</h3>
+<ul>
+<li><a href="https://www.essa.pt/">Escola Superior de Saúde do Alcoitão</a> - <strong>NOK</strong></li>
+<li><a href="https://tmsr.scml.pt/">Temporada Música em São Roque</a> - <strong>NOK</strong></li>
 </ul>
 </div>
               </li></ul>
