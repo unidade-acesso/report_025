@@ -7,7 +7,7 @@ seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou
 status: "Em progresso"                    # Entre aspas escreve o estado do relatório
 ---
 
-# Santa Casa da Misericórdia - Pack 2
+# Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)
 
 - Data de criação: 11/03/2026
 - URL: https://www.essa.pt/
