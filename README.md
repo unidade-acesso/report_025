@@ -1,7 +1,7 @@
 ---
-website: "Santa Casa da Misericórdia - Pack 2"          # Entre as aspas escreve o nome do website
+website: Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)"          # Entre as aspas escreve o nome do website
 date: "11/03/2026"                    # Entre as aspas escreve a data de criação do 1º relatório. Os restantes estão no histórico
-uri: "https://www.essa.pt/, https://tmsr.scml.pt/"   # Entre as aspas escreve o domínio do website
+uri: "https://www.essa.pt/"   # Entre as aspas escreve o domínio do website
 owner: "Santa Casa da Misericórdia"         # Entre as aspas escrever o nome do owner do website
 seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou Ouro
 status: "Em progresso"                    # Entre aspas escreve o estado do relatório
@@ -10,13 +10,13 @@ status: "Em progresso"                    # Entre aspas escreve o estado do rela
 # Santa Casa da Misericórdia - Pack 2
 
 - Data de criação: 11/03/2026
-- URL: https://www.essa.pt/, https://tmsr.scml.pt/
+- URL: https://www.essa.pt/
 - Propriedade: Santa Casa da Misericórdia
 - Candidatura: Prata
 
 ## Relatório de Auditoria
 
-Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia - Pack 2](relatorio_report_025.html)
+Consulte aqui a última atualização: [Relatório da Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)](relatorio_report_025.html)
 
 <details>
   <summary>Histórico de atualizações</summary>
@@ -26,5 +26,4 @@ Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia -
 </details>
 
 ## Declarações de Acessibilidade analisadas
-- ESSA - Área Pública: https://www.essa.pt/acessibilidade/
-- Temporada Música São Roque: https://tmsr.scml.pt/declaracao-de-acessibilidade/
+-  https://www.essa.pt/acessibilidade/
