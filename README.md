@@ -4,6 +4,7 @@ date: "11/03/2026"                    # Entre as aspas escreve a data de criaç�
 uri: "https://www.essa.pt/, https://tmsr.scml.pt/"   # Entre as aspas escreve o domínio do website
 owner: "Santa Casa da Misericórdia"         # Entre as aspas escrever o nome do owner do website
 seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou Ouro
+status: "Em progresso"                    # Entre aspas escreve o estado do relatório
 ---
 
 # Santa Casa da Misericórdia - Pack 2
@@ -25,5 +26,5 @@ Consulte aqui a última atualização: [Relatório da Santa Casa Misericórdia -
 </details>
 
 ## Declarações de Acessibilidade analisadas
-- https://www.essa.pt/acessibilidade/
-- https://tmsr.scml.pt/declaracao-de-acessibilidade/
+- ESSA - Área Pública: https://www.essa.pt/acessibilidade/
+- Temporada Música São Roque: https://tmsr.scml.pt/declaracao-de-acessibilidade/
