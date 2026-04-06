@@ -25,5 +25,5 @@ Consulte aqui a última atualização: [Relatório da Escola Superior de Saúde 
   </ul>
 </details>
 
-## Declarações de Acessibilidade analisada
+## Declaração de Acessibilidade analisada
 -  https://www.essa.pt/acessibilidade/
