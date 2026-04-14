@@ -16,7 +16,7 @@ status: "Em progresso"                    # Entre aspas escreve o estado do rela
 
 ## Relatório de Auditoria
 
-Consulte aqui a última atualização: [Relatório da Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)](relatorio_report_025.html)
+Consulte aqui a última atualização: [Relatório da Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)](report.html)
 
 <details>
   <summary>Histórico de atualizações</summary>
