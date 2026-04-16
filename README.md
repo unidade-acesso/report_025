@@ -3,7 +3,7 @@ website: "Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)
 date: "11/03/2026"                    # Entre as aspas escreve a data de criação do 1º relatório. Os restantes estão no histórico
 uri: "https://www.essa.pt/"   # Entre as aspas escreve o domínio do website
 owner: "Santa Casa da Misericórdia"         # Entre as aspas escrever o nome do owner do website
-a11y_statement: "https://www.cm-alcobaca.pt/acessibilidade"
+a11y_statement: "https://www.essa.pt/acessibilidade/"
 seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou Ouro
 validity: ""    # Entre as aspas escreve o período de 1 ano de validade do Selo
 status: "A aguardar correções da entidade"     # Entre as aspas escreve uma das seguintes opções: "Auditoria a decorrer", "A aguardar correções da entidade", "Concluído" 
