@@ -79,14 +79,14 @@
   <a href="#conteudo-principal" class="skip-link visually-hidden-focusable">Saltar para o conteúdo principal</a>
   <div class="container mt-4" id="conteudo-principal">
     <header class="mb-4">
-      <h1>Relatório Avaliação da Candidatura da Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)</h1>
+        <h1>Relatório Avaliação da <br> Candidatura da Escola Superior de Saúde do Alcoitão - ESSAlcoitão (Área Pública)</h1>
     </header>
 
     <section class="mb-4">
       <ul>
         <li>Avaliação feita por: ARTE. I.P. - Núcleo de Experiência e Usabilidade</li>
         <li>Data de criação: 11/03/2026</li>
-        <li>Última atualização: 09/04/2026</li>
+        <li>Última atualização: 21/04/2026</li>
         <li>URL: <a href="https://www.essa.pt/" target="_blank" rel="noopener noreferrer">https://www.essa.pt/</a></li>
         <li>Propriedade: Santa Casa da Misericórdia</li>
         <li>Candidatura: Prata</li>
@@ -379,8 +379,8 @@
 <p>O texto “Pesquisar” visível no campo não corresponde a uma label, mas sim ao atributo placeholder. Embora o placeholder="Pesquisar..." cumpra uma função visual semelhante, não deve ser utilizado como substituto de uma label porque o placeholder desaparece assim que o utilizador começa a escrever, o que pode levar à perda de contexto, especialmente para pessoas com dificuldades de memória.</p>
 <p>Além disso, alguns leitores de ecrã anunciam tanto o aria-label como o placeholder, criando redundância (por exemplo: “Pesquisar… Pesquisar…”), como acontece neste site.</p>
 <h3><strong>Recomendações:</strong></h3>
-<p>Nota: Verificámos que utilizam Forms Office para inscrições</p>
-<p><a href="https://www.essa.pt/momentos-to-regressam-a-25-de-marco-por-entre-ramos-e-frutos-do-projeto-casa-na-arvore/">https://www.essa.pt/momentos-to-regressam-a-25-de-marco-por-entre-ramos-e-frutos-do-projeto-casa-na-arvore/</a><br><a href="https://forms.office.com/pages/responsepage.aspx?id=ry_9sDY4yE-hvQQWypabvSQlAMaukKZLpgJNwdMfTyNUQzQxQjJBMVZKVDBZRVcyWUdXUEtQVzRMVy4u&amp;route=shorturl">https://forms.office.com/pages/responsepage.aspx?id=ry_9sDY4yE-hvQQWypabvSQlAMaukKZLpgJNwdMfTyNUQzQxQjJBMVZKVDBZRVcyWUdXUEtQVzRMVy4u&amp;route=shorturl</a></p>
+<p>Devem garantir que todos os campos de edição, dropdowns, pesquisa, date pickers, são estruturados como <input> e com uma <label>. O <code>for</code> da <code>&lt;label&gt; </code>deve ter o mesmo valor que o <code>id </code>do <code>&lt;input&gt;</code>, para que o leitor de ecrã consiga comunicar a informação da label do campo quando foca no componente, assim como o cursor surgir no respectivo campo de edição quando se clica na etiqueta.</label></p>
+<p><strong>Nota: Verificámos que utilizam Forms Office para inscrições e que são acessíveis.</strong><br><a href="https://www.essa.pt/momentos-to-regressam-a-25-de-marco-por-entre-ramos-e-frutos-do-projeto-casa-na-arvore/">https://www.essa.pt/momentos-to-regressam-a-25-de-marco-por-entre-ramos-e-frutos-do-projeto-casa-na-arvore/</a><br><a href="https://forms.office.com/pages/responsepage.aspx?id=ry_9sDY4yE-hvQQWypabvSQlAMaukKZLpgJNwdMfTyNUQzQxQjJBMVZKVDBZRVcyWUdXUEtQVzRMVy4u&amp;route=shorturl">https://forms.office.com/pages/responsepage.aspx?id=ry_9sDY4yE-hvQQWypabvSQlAMaukKZLpgJNwdMfTyNUQzQxQjJBMVZKVDBZRVcyWUdXUEtQVzRMVy4u&amp;route=shorturl</a></p>
 </div>
               </li></ul>
 </div>
@@ -423,7 +423,7 @@
 <p><em>Figura 1 - Leitor de ecrã lê a imagem do fundo da notícia como "Link, gráfico sem etiqueta".</em> </p>
 <h3><strong>Recomendações</strong></h3>
 <p>As imagens-link devem incluir um texto alternativo (alt) que indique claramente qual o destino do link e que seja lido pelo leitor de ecrã. </p>
-<p>Nesse caso, o texto alternativo pode ser "alt="Abrir imagem do evento "Moementos TO". </p>
+<p>Nesse caso, o texto alternativo pode ser "alt="Abrir imagem do evento "Momentos TO". </p>
 </div>
               </li></ul>
 </div>
@@ -491,12 +491,36 @@
 <p>Quando se retira o CSS, deve ser possível reconhecer a semântica dos diversos elementos.<br>– <a href="https://amagovpt.github.io/kit-selo/checklists/checklist-10aspetos#n83">ver requisito 8.3 na lista 10 aspetos</a></p>
 </blockquote>
 <h3><strong>Evidências:</strong></h3>
+<p>Na página <a href="https://www.essa.pt/escola/qualidade/">Qualidade</a>, e em outras secções do site, ao desativar o CSS, os cartões que permitem descarregar ficheiros PDF passam a ser apresentados apenas como texto simples, deixando de funcionar como links clicáveis.</p>
+<p>Isso acontece porque o elemento clicável <code>&lt;a&gt;</code> está dentro de <code>&lt;span class="fusion-column-inner-bg"&gt;</code> e apenas envolve um span com imagem de fundo, enquanto o conteúdo visível real (título, tamanho do ficheiro, ícone) está numa <code>&lt;div&gt;</code> irmã separada (fusion-column-wrapper). </p>
+<p>Assim, visualmente parece um cartão com link, mas semanticamente o texto não está dentro do link.</p>
 <img src="https://github.com/user-attachments/assets/ce6148ba-52ba-42b0-aa42-6dd9b5507fd1" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
 
 
 
-
+<p>Figura 1 - Card sem CSS</p>
 <h3><strong>Recomendações:</strong></h3>
+<p>Para resolver isto, pode ser utilizado como exemplo a classe .stretched-link do Bootstrap no elemento <code>&lt;a&gt;</code>. Esta classe utiliza um pseudo-elemento<code> ::after</code> para expandir a área clicável por todo o bloco que a contém. </p>
+<p>O link não precisa do aria-label descritivo com o nome do documento, formato e tamanho do ficheiro, porque o texto já é lido pelo leitor de ecrã</p>
+<p>O ícone decorativo de download foi definido com um atributo alt que estava anteriormente no aria-label, para evitar repetições desnecessárias.</p>
+<p>A estrutura ficaria algo como: </p>
+<pre><code>&lt;div class="download-card position-relative"&gt;
+  &lt;p class="download-card__title"&gt;Plano de Qualidade&lt;/p&gt;
+  &lt;p class="download-card__meta"&gt;PDF 119KB&lt;/p&gt;
+  
+
+&lt;!--IMAGE_PLACEHOLDER_1--&gt;
+
+
+
+  &lt;a
+    href="/wp-content/uploads/2024/04/qualidade-plano.pdf"
+    rel="noopener noreferrer"
+    target="_blank"
+    class="stretched-link"
+  &gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
 </div>
               </li>
               <li class="evidence-item">
@@ -564,12 +588,50 @@
 <ul class="evidence-list">
 
               <li class="evidence-item">
-                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/a11y-PT/report_025/issues/21" class="issue-link" target="_blank" rel="noopener noreferrer">issue #21</a> <strong>R 8.4 - 10 Aspetos</strong></p>
+                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/a11y-PT/report_025/issues/21" class="issue-link" target="_blank" rel="noopener noreferrer">issue #21</a> <strong>Quando se retira o CSS, a paginação do carrossel desaparece</strong></p>
                 <div class="evidence-labels"><span class="label-tag label-checklist"><span class="sr-only">etiqueta: </span>chk 10 web</span><span class="label-tag label-nok"><span class="sr-only">etiqueta: </span>NOK</span><span class="label-tag label-requisito"><span class="sr-only">etiqueta: </span>R 8.4</span></div>
                 <div class="issue-content"><blockquote>
 <p>Quando se retira o CSS, a informação relevante permanece visível.<br>– <a href="https://amagovpt.github.io/kit-selo/checklists/checklist-10aspetos#n91">ver requisito 8.4 na lista 10 aspetos</a></p>
 </blockquote>
-<p>desaparece os botões do carrossel</p>
+<h3>Evidências</h3>
+<p>Quando o CSS está ativo, o carrossel torna-se inacessível para utilizadores de teclado e leitores de ecrã, por razões distintas. Os elementos interativos (slides, setas de navegação e paginação) estão marcados com <code>aria-hidden="true"</code>, ocultando-os dos leitores de ecrã. Em paralelo, os estilos <code>pointer-events: none, visibility: hidden e opacity: 0</code> aplicados aos slides removem-nos da ordem de foco do teclado. Em consequência, a navegação por teclado salta diretamente do menu para o conteúdo do primeiro slide visível, ignorando os restantes slides e os controlos de navegação.</p>
+<img src="https://github.com/user-attachments/assets/f499054d-dc97-45cf-b5bc-c7debc446710" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p><em>Figura 1 - Carrossel da página inicial com CSS aplicado</em></p>
+<p>Ao desativar o CSS da página, os controlos de paginação do carrossel deixam de ser visíveis, confirmando que dependem exclusivamente de estilos visuais sem alternativa acessível.</p>
+<img src="https://github.com/user-attachments/assets/996c7068-546c-489c-8cd5-cdf84a90be40" alt="Image" class="evidence-image" style="max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px;">
+
+
+
+<p><em>Figura 2 - Carrossel da página inicial sem CSS aplicado</em></p>
+<h3>Recomendações</h3>
+<ul>
+<li>Remover <code>aria-hidden="true"</code> de todos os elementos dos slides ativos para que fiquem acessíveis. </li>
+<li>Remover pointer-events: none e corrigir visibilidade nos slides. </li>
+<li>Tornar as setas de paginação acessíveis ao estruturar como botão com um <code>aria-label</code>:</li>
+</ul>
+<pre><code>&lt;button class="sr-rightarrow" aria-label="Slide seguinte"&gt;
+  
+
+&lt;!--IMAGE_PLACEHOLDER_2--&gt;
+
+
+&lt;/button&gt;
+
+&lt;button class="sr-leftarrow" aria-label="Slide anterior"&gt;
+  
+
+&lt;!--IMAGE_PLACEHOLDER_3--&gt;
+
+
+&lt;/button&gt;
+</code></pre>
+<ul>
+<li>Adicionar estrutura semântica ao contentor principal do carrossel, identificando-o como uma região com título acessível:<br><code>&lt;sr7-module id="SR7_1_1" role="region" aria-label="Destaques" aria-roledescription="carrossel" ...&gt; </code></li>
+<li>Preferencialmente, cada slide devia ser estruturado como uma <code>&lt;ul&gt;&lt;li&gt;</code> para se compreender a posição em que se encontra na sequência de slide. Mas também podem optar por atribuir um <code>aria-label</code> a cada slide:<br><code>&lt;sr7-slide role="group" aria-roledescription="slide" aria-label="Slide 1 de 3" ...&gt;</code></li>
+</ul>
 </div>
               </li></ul>
 </div>
@@ -682,7 +744,7 @@
 <ul class="evidence-list">
 
               <li class="evidence-item">
-                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/a11y-PT/report_025/issues/28" class="issue-link" target="_blank" rel="noopener noreferrer">issue #28</a> <strong>Não existe qualquer resumo do propósito na página inicial</strong></p>
+                <p><span class="visually-hidden">evidência: </span><a href="https://github.com/a11y-PT/report_025/issues/28" class="issue-link" target="_blank" rel="noopener noreferrer">issue #28</a> <strong>Existe uma descrição do propósito do site, mas não está imediatamente visível quando se entra na página inicial</strong></p>
                 <div class="evidence-labels"><span class="label-tag label-requisito"><span class="sr-only">etiqueta: </span>R 1.1</span><span class="label-tag label-checklist"><span class="sr-only">etiqueta: </span>chk conteúdo</span><span class="label-tag label-nok"><span class="sr-only">etiqueta: </span>NOK</span></div>
                 <div class="issue-content"><blockquote>
 <p>O sítio Web apresenta um resumo breve do seu propósito, visível sem fazer scroll.<br>– <a href="https://amagovpt.github.io/kit-selo/checklists/checklist-conteudo#n11">ver requisito 1.1 na lista Conteúdo</a></p>
