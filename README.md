@@ -6,7 +6,7 @@ owner: "Santa Casa da Misericórdia"         # Entre as aspas escrever o nome do
 a11y_statement: "https://www.essa.pt/acessibilidade/"
 seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou Ouro
 validity: ""    # Entre as aspas escreve o período de 1 ano de validade do Selo
-status: "A aguardar correções da entidade"     # Entre as aspas escreve uma das seguintes opções: "Auditoria a decorrer", "A aguardar correções da entidade", "Concluído" 
+status: "Auditoria a decorrer - Rever correções"     # Entre as aspas escreve uma das seguintes opções: "Auditoria a decorrer", "A aguardar correções da entidade", "Concluído" 
 ---
 
 # Relatório de auditoria
