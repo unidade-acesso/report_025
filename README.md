@@ -5,8 +5,8 @@ uri: "https://www.essa.pt/"   # Entre as aspas escreve o domínio do website
 owner: "Santa Casa da Misericórdia"         # Entre as aspas escrever o nome do owner do website
 a11y_statement: "https://www.essa.pt/acessibilidade/"
 seal: "Prata"                          # Entre as aspas escreve Bronze, Prata ou Ouro
-validity: ""    # Entre as aspas escreve o período de 1 ano de validade do Selo
-status: "A aguardar correções da entidade"     # Entre as aspas escreve uma das seguintes opções: "Auditoria a decorrer", "A aguardar correções da entidade", "Concluído" 
+validity: "13-05-2026 a 13-05-2027"    # Entre as aspas escreve o período de 1 ano de validade do Selo
+status: "Concluído - Selo atribuído"     # Entre as aspas escreve uma das seguintes opções: "Auditoria a decorrer", "A aguardar correções da entidade", "Concluído" 
 ---
 
 # Relatório de auditoria
